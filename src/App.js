@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <h5>sup</h5>
-      <Questions />
+      <Questions quizData={quizData} />
     </div>
   );
 }
