@@ -1,13 +1,11 @@
 import React from "react";
 
 function Questions(props) {
-  const quizQuestion = props.quizData.map((quizQuestions) => {
-    return quizQuestions.question +<br />;
-  });
+  const quizQuestion = props.quizData.map((quizQuestions) => <div>{quizQuestions.question}</div>);
   console.log("questions", quizQuestion)
   return (
     <div>
-      <p>{quizQuestion}</p>
+      {quizQuestion}
     </div>
   );
 }
